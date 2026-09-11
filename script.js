@@ -1,5 +1,3 @@
-```javascript
-
 const pageContainer = document.querySelector("#pageContainer");
 const mainHeading = document.querySelector("#mainHeading");
 const nameInput = document.querySelector("#nameInput");
@@ -7,7 +5,6 @@ const greetingButton = document.querySelector("#greetingButton");
 const backgroundButton = document.querySelector("#backgroundButton");
 const resetButton = document.querySelector("#resetButton");
 const messageArea = document.querySelector("#messageArea");
-
 
 const originalHeading = "Welcome to My Interactive Webpage";
 const originalBackground = "#f4f7fb";
@@ -30,7 +27,6 @@ function handleGreetingClick() {
 function handleBackgroundClick() {
     pageContainer.style.backgroundColor = "#e8f5e9";
     document.body.style.backgroundColor = "#dff3e3";
-
     messageArea.textContent = "The background color was changed.";
 
     console.log("Background button was clicked.");
@@ -63,21 +59,12 @@ function handleMouseover(event) {
 }
 
 greetingButton.addEventListener("click", handleGreetingClick);
-
-
 backgroundButton.addEventListener("click", handleBackgroundClick);
-
-
 resetButton.addEventListener("click", handleResetClick);
-
-
 nameInput.addEventListener("input", handleInput);
-
 
 greetingButton.addEventListener("mouseover", handleMouseover);
 backgroundButton.addEventListener("mouseover", handleMouseover);
 resetButton.addEventListener("mouseover", handleMouseover);
 
 console.log("Event-driven webpage JavaScript loaded successfully.");
-```
-
